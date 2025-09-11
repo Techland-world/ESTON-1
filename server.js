@@ -28,7 +28,7 @@ const limiter = rateLimit({
 app.use(limiter);
 
 // CORS configuration
-const allowedOrigins = ['https://estonschool.onrender.com', 'http://localhost:3000', 'https://eston-duplicate.onrender.com'];
+const allowedOrigins = ['https://estonschool.onrender.com', 'https://eston-duplicate.onrender.com'];
 
 app.use(cors({
   origin: function(origin, callback) {
